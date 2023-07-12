@@ -31,7 +31,6 @@ public class Ejercicio7 {
         informarMayor(persona3);
         informarMayor(persona4);
 
-
     }
     public static void informeIMC(Persona persona){
         PersonaService personaService = new PersonaService();
@@ -55,4 +54,5 @@ public class Ejercicio7 {
             System.out.println(persona.getNombre() + ": es menor de edad");
         }
     }
+    
 }
