@@ -1,32 +1,25 @@
 
 
 package ejercicio10;
-import java.util.Date;
-import java.util.Scanner;
+import Entidad.EjercicioArrays;
+
 
 public class Ejercicio10 {
 
     public static void main(String[] args) {
-        Scanner read = new Scanner(System.in);
-        Date fechaActual = new Date();
+        EjercicioArrays ejercicio = new EjercicioArrays();
+
+        ejercicio.generarValores(ejercicio.getArrayA());
+        System.out.println("Arreglo A sin ordenar:");
+        ejercicio.mostrarArray(ejercicio.getArrayA());
+
+        ejercicio.llenarVector();
+
+        System.out.println("Arreglo A ordenado de menor a mayor:");
+        ejercicio.mostrarArray(ejercicio.getArrayA());
         
-        System.out.println("Ingresar el día: ");
-        int dia = read.nextInt();
-        
-        System.out.println("Ingresar el mes: ");
-        int mes = read.nextInt();
-        
-        System.out.println("Ingresar el año: ");
-        int anio = read.nextInt();
-        
-        Date fecha = new Date(anio - 1900, mes - 1, dia);
-        
-        int diferenciaAnios = fechaActual.getYear() - fecha.getYear();
-        
-        System.out.println("Fecha ingresada: " + fecha);
-        System.out.println("Fecha actual: " + fechaActual);
-        System.out.println("La diferencia de años es de: "+ diferenciaAnios);
-        
+        System.out.println("Arreglo B combinado:");
+        ejercicio.mostrarArray(ejercicio.getArrayB());
     }
 
 }
