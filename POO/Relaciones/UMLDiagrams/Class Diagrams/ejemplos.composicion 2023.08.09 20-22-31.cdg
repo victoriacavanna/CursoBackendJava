@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="ejemplos.composicion">
+  <ClassDiagramComponents>
+    <Class name="Empleado" package="ejemplos.composicion" visibility="public" xPosition="336.0" yPosition="184.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Empresa" package="ejemplos.composicion" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="empleados" type="List&lt;Empleado&gt;" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="empleados" source="ejemplos.composicion.Empresa" target="ejemplos.composicion.Empleado" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
