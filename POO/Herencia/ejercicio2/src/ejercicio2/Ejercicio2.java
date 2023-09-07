@@ -1,12 +1,13 @@
 package ejercicio2;
 
+import ejercicio2.entidades.Electrodomestico;
 import ejercicio2.entidades.Lavadora;
 import ejercicio2.entidades.Televisor;
+import java.util.ArrayList;
 
 public class Ejercicio2 {
 
     public static void main(String[] args) {
-//
         Lavadora lavadora1 = new Lavadora();
         Televisor televisor1 = new Televisor();
 
